@@ -20,5 +20,5 @@ body {
   font-family: "Inconsolata", serif;
   background-color: var(--color-neutral-900);
   color: var(--color-neutral-0);
-  background-image: url("./pattern-lines.svg");
+  background-image: url("./conference-ticket-generator/pattern-lines.svg");
 }

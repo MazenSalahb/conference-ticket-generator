@@ -7,12 +7,6 @@ import BackgroundImages from "./components/BackgroundImages";
 function App() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-
-    setIsSubmitted(true);
-  }
-
   return (
     <main className="min-h-screen flex flex-col items-center pt-6">
       <BackgroundImages />
@@ -55,7 +49,7 @@ function App() {
       </div>
 
       {!isSubmitted ? (
-        <TicketForm handleSubmit={handleSubmit} />
+        <TicketForm setIsSubmitted={setIsSubmitted} />
       ) : (
         <div className="max-w-xl mt-24 w-full p-3 md:p-0">
           <Ticket />
